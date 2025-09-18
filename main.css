@@ -1,0 +1,39 @@
+#firts{
+    background-color: yellow;
+    text-align: center;
+}
+.articles{
+    margin-left: 100px;
+  margin-bottom: 500px;
+  border-left: 2px solid green;
+  padding-left: 10px;
+}
+.container {
+  display: block;
+}
+#menu {
+  float: left;
+}
+.floaters {
+  margin: 0;
+}
+#last-posts h2,
+ul {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+.container {
+  display: block;
+}
+#last-posts {
+  float: right;
+  border-width: 2px;
+  border-color: green;
+  border-style: dashed;
+  text-align: right;
+  padding: 10px;
+}
