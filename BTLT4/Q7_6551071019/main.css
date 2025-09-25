@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+.login-box {
+  width: 300px;
+  border: 1px solid #999;
+  margin: 50px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: brown;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 5px 10px;
+  text-align: left;
+   border: 3px solid black;
+}
+
+input[type="text"], input[type="password"] {
+  width: 95%;
+  padding: 5px;
+}
+
+input[type="submit"], input[type="button"] {
+  padding: 5px 15px;
+  /* background: #d9edf7; */
+  border: 1px solid #666;
+  cursor: pointer;
+}
+
+
+p a {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+}
+table {
+    background: #d9edf7;
+     border-collapse: collapse; /* gộp viền cho đẹp */
+  border: 3px solid black;   /* khung ngoài */
+}
+
+

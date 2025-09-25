@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng nhập</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="login-box">
+    <h2>Đăng nhập</h2>
+    <form onsubmit="showName(event)" >
+      <table >
+        <tr>
+          <td>Mã người dùng:</td>
+          <td><input type="text" id="username" name="username" required></td>
+        </tr>
+        <tr>
+          <td>Mật khẩu:</td>
+          <td><input type="password" name="password" required></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center;">
+            <input type="submit" value="Đồng ý">
+          </td>
+        </tr>
+      </table>
+    </form>
+    <div id="result" style="margin-top:10px; color:blue; font-weight:bold;"></div>
+
+  </div>
+   <script>
+    function showName(event) {
+      event.preventDefault(); // không reload trang
+      let name = document.getElementById("username").value;
+      document.getElementById("result").innerHTML = "Xin chào: <b>" + name + "</b>";
+    }
+  </script>
+</body>
+</html>

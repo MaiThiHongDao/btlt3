@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết Kế Các Loại Menu</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <h2>a) Menu Ngang</h2>
+    <nav class="horizontal-menu">
+        <ul>
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">GÓP Ý</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <h2>b) Menu Dọc</h2>
+    <aside class="vertical-menu-container">
+        <div class="menu-header">DANH MỤC SẢN PHẨM</div>
+        <nav class="vertical-menu">
+            <ul>
+                <li><a href="#">Mặt vợt</a></li>
+                <li><a href="#">Cốt vợt</a></li>
+                <li><a href="#">Bóng</a></li>
+                <li><a href="#">Giày/tất bóng bàn</a></li>
+                <li><a href="#">Quần áo bóng bàn</a></li>
+                <li><a href="#">Phụ kiện bóng bàn</a></li>
+                <li><a href="#">Thiết bị bóng bàn</a></li>
+                <li><a href="#">Bộ vợt khuyến dùng</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <br>
+
+    <h2>c) Menu Đa Cấp</h2>
+    <nav class="dropdown-menu-container">
+        <ul class="main-level">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Tin Tức</a>
+                <ul class="sub-level">
+                    <li><a href="#">Tin Thể Thao</a></li>
+                    <li><a href="#">Tin Giải Trí</a></li>
+                    <li><a href="#">Tin Xã Hội</a></li>
+                    <li><a href="#">Khoa học công nghệ</a>
+                        <ul class="sub-sub-level">
+                            <li><a href="#">Công nghệ mới</a></li>
+                            <li><a href="#">Khoa học máy tính</a></li>
+                            <li><a href="#">Khoa học vũ trụ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Góp ý</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

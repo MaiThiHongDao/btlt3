@@ -1,0 +1,157 @@
+/* Thiết lập chung cho Menu */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* -------------------------------------- */
+/* a) MENU NGANG */
+/* -------------------------------------- */
+.horizontal-menu {
+    background-color: #ff9933; /* Màu cam */
+    border: 1px solid #ff6600; /* Đường viền đậm hơn */
+    width: fit-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.horizontal-menu ul {
+    display: flex;
+}
+
+.horizontal-menu li {
+    position: relative;
+    border-right: 1px solid white;
+}
+
+.horizontal-menu li:last-child {
+    border-right: none;
+}
+
+.horizontal-menu a {
+    color: white;
+    font-size: 1rem;
+    padding: 0.5em 1.5em; /* Khoảng cách */
+    text-align: center;
+    font-weight: bold;
+}
+
+.horizontal-menu a:hover {
+    background-color: #ff8800; /* Màu đậm hơn khi hover */
+}
+
+
+/* -------------------------------------- */
+/* b) MENU DỌC */
+/* -------------------------------------- */
+.vertical-menu-container {
+    width: 200px; /* Chiều rộng cố định theo mẫu */
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-header {
+    background-color: #ff9933; /* Màu cam */
+    color: white;
+    font-weight: bold;
+    padding: 0.5em;
+    text-align: center;
+    border-bottom: 1px solid #ff6600;
+}
+
+.vertical-menu li a {
+    background-color: #f0f0f0; /* Màu xám nhạt */
+    color: black;
+    font-size: 0.9rem;
+    padding: 0.5em 0.8em;
+    margin-bottom: 1px;
+}
+
+.vertical-menu li a:hover {
+    background-color: #e0e0e0; /* Màu xám đậm hơn khi hover */
+    color: #ff6600; /* Chữ cam khi hover */
+}
+
+
+/* -------------------------------------- */
+/* c) MENU ĐA CẤP (Dropdown) */
+/* -------------------------------------- */
+.dropdown-menu-container {
+    width: 80%;
+    border: 1px solid #ff9933;
+}
+
+.main-level {
+    display: flex;
+    background-color: #ff9933; /* Màu cam cho cấp 1 */
+}
+
+.main-level > li {
+    position: relative;
+    border-right: 1px solid white;
+}
+
+.main-level a {
+    color: white;
+    font-weight: normal;
+    padding: 0.5em 1em;
+    white-space: nowrap; /* Ngăn chữ bị xuống dòng */
+}
+
+.main-level > li:hover > a {
+    background-color: #ff8800;
+}
+
+/* Cấp con */
+.sub-level, .sub-sub-level {
+    display: none; /* Ẩn menu con ban đầu */
+    position: absolute;
+    min-width: 10em; /* Chiều rộng tối thiểu */
+    z-index: 1000;
+}
+
+/* Cấp 2 */
+.sub-level {
+    top: 100%; /* Đặt ngay dưới menu cha */
+    left: 0;
+    border: 1px solid #ff6600;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Cấp 3 và sâu hơn */
+.sub-sub-level {
+    top: 0;
+    left: 100%; /* Đặt bên phải menu cha */
+    border: 1px solid #ff6600;
+}
+
+/* Định dạng các mục menu con */
+.sub-level li a, .sub-sub-level li a {
+    background-color: #ffaa33; /* Màu cam nhạt hơn */
+    color: white;
+    border-bottom: 1px solid #ff9933;
+}
+
+.sub-level li:last-child a, .sub-sub-level li:last-child a {
+    border-bottom: none;
+}
+
+/* Hiển thị menu con khi hover */
+.main-level li:hover > .sub-level {
+    display: block;
+}
+
+.sub-level li:hover > .sub-sub-level {
+    display: block;
+}
+
+/* Hover cho menu con */
+.sub-level li a:hover, .sub-sub-level li a:hover {
+    background-color: #ff8800; /* Màu đậm hơn khi hover */
+}

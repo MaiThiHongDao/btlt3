@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+h1{
+  color:brown;
+}
+caption {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: darkgreen;
+    margin: 1em 0;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    background: #eafaea; 
+    width: 80%;
+}
+
+td {
+    padding: 0.5em;
+}
+
+input[type="text"] {
+    border: 1px solid gray;
+    padding: 0.3em;
+    width: 90%;
+}
+
+input[type="radio"] {
+    margin-left: 1em;
+}
+
+select {
+    border: 1px solid gray;
+    padding: 0.2em;
+}
+
+input[type="submit"] {
+    background: #ccc;
+    border: 1px solid gray;
+    padding: 0.4em 1.2em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: lightgray;
+}
+
+td[colspan] {
+    text-align: center;
+    font-weight: bold;
+    color: crimson;
+}

@@ -1,0 +1,79 @@
+:root {
+    --main-bg-color: white;
+    --header-bg-color: navy;
+    --header-text-color: white;
+    --sidebar-width: 25%; 
+    --content-padding: 1.5em;
+    --link-color: blue;
+    --dark-blue: #000080; 
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+}
+
+.container {
+    width: 90%; 
+    margin: 1rem auto; 
+    border: medium solid black;
+}
+header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    text-align: center;
+    padding: 0.5em 0;
+}
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.content-wrapper {
+    display: flex;
+}
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: lightcyan; 
+    border-right: thin solid black;
+    border-left: 0.75em solid var(--dark-blue); 
+    padding: 1em 0;
+}
+.sidebar ul {
+    list-style: square; 
+    margin: 0;
+    padding: 0 0 0 1.5rem; 
+}
+.sidebar li {
+    padding: 0.25em 0;
+    margin-right: 0.5em;
+}
+.sidebar a {
+    text-decoration: underline;
+    color: var(--link-color);
+    font-size: 0.9em;
+}
+.main-content {
+    flex-grow: 1;
+    padding: var(--content-padding);
+}
+.main-content h2 {
+    color: var(--dark-blue);
+    margin-top: 0;
+    font-size: 1.75em;
+}
+.requirement h3 {
+    text-decoration: underline;
+    font-size: 1.25em;
+}
+.requirement p {
+    margin-bottom: 0.5em;
+}
+.code-text {
+    text-align: center;
+}
+.code-text p {
+    font-size: 1.1em;
+    margin: 0.25em 0;
+}

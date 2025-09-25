@@ -1,0 +1,21 @@
+h1{
+    color:rgb(133, 10, 10);
+    text-align:center;
+}
+table{
+    border-collapse:collapse; 
+    border:2px solid rgb(221, 125, 47);
+    margin: 0 auto;
+}
+td, th {
+    border: 2px solid rgb(221, 125, 47);     
+    padding: 8px;
+    text-align: center;
+}
+.cot{
+    color:rgb(201, 80, 36);
+    text-align: center; 
+}
+.do{
+    background-color:rgb(157, 14, 14);
+}

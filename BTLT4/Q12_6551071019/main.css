@@ -1,0 +1,161 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    background-color: white; 
+}
+
+.wrapper {
+    max-width: 900px; 
+    margin: 0 auto;
+    border: medium solid black; 
+}
+
+.header {
+    background-color: white;
+    padding: 0.5em 1em;
+}
+
+.logo-image {
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+.logo-area p {
+    font-style: italic;
+    color: gray;
+    margin-top: small;
+    margin-bottom: 0;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: orange; 
+    padding: 0;
+}
+
+.main-nav a {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em; 
+    border-right: thin solid white; 
+}
+
+.content-area {
+    display: flex;
+}
+
+.sidebar {
+    flex: 0 0 25%;
+    background-color: lightgray; 
+    border-right: thin solid black;
+    padding: 0.5em;
+}
+
+.sidebar h2 {
+    background-color: #E5E5E5; 
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: black;
+    padding: 0.35em;
+    margin: 0 0 0.5em 0;
+}
+
+.vertical-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-menu li a {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 0.35em; 
+    margin-bottom: 0.1em;
+    background-color: white; 
+    border: thin solid lightgray; 
+}
+
+.product-selection {
+    margin-top: 1em;
+}
+
+.product-selection form input,
+.product-selection form select,
+.product-selection form button {
+    display: block;
+    width: 90%; 
+    margin-bottom: 0.5em;
+    box-sizing: border-box;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 1em;
+}
+
+.product-detail .detail-image {
+    width: auto;
+    max-height: 18em;
+    float: right;
+    margin-left: 1em;
+    border: medium solid lightgray;
+}
+
+.main-content h3 {
+    color: orangered;
+    font-size: 1.2em;
+}
+
+.main-content p {
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.section-title {
+    background-color: orange; 
+    color: white;
+    padding: 0.5em;
+    font-size: 1.1em;
+    font-weight: bold;
+    clear: both; 
+    margin-top: 1em;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.product-item {
+    flex: 0 0 22%; 
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border: thin solid lightgray;
+    box-sizing: border-box;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+    font-size: 0.75em; 
+    border-top: thick solid orangered; 
+}

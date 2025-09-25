@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký du lịch</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="form-box">
+    <h1>Đăng ký du lịch</h1>
+    <form>
+      <table>
+        <tr>
+          <td>Họ và tên</td>
+          <td><input type="text" name="hoten" ></td>
+        </tr>
+        <tr>
+          <td>Địa chỉ</td>
+          <td><input type="text" name="diachi" ></td>
+        </tr>
+        <tr>
+          <td>Điện thoại</td>
+          <td><input type="text" name="dienthoai" ></td>
+        </tr>
+        <tr>
+          <td>Khách Việt Nam</td>
+          <td><input type="checkbox" checked></td>
+        </tr>
+        <tr>
+          <td>Chọn tour</td>
+          <td>
+            <select>
+              <option selected>Buôn mê thuột - Gia lai - Kontum</option>
+              <option>Hà Nội - Hạ Long - Sapa</option>
+              <option>Huế - Đà Nẵng - Hội An</option>
+              <option>Phú Quốc</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Phương tiện</td>
+          <td>
+            <input type="radio" name="phuongtien"> Máy bay
+            <input type="radio" name="phuongtien"> Xe ô tô
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="so-luong">
+            <fieldset>
+              <legend>Số lượng đoàn khách</legend>
+              Người lớn <input type="text"  size="3">
+              Trẻ em <input type="text"  size="3">
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td>Ghi chú thêm</td>
+          <td>
+            <textarea rows="3">     </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Đồng ý">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="success">Bạn đã đăng ký thành công!!!</td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>

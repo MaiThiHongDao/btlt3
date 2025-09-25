@@ -1,0 +1,38 @@
+#bai{
+    color: green;
+    text-align: center;
+}
+#yc{
+    color: blue;
+}
+#de{
+    text-align: center;
+    color: deeppink;
+    background-color: rgb(225, 183, 203);
+}
+.nd{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+}
+.d1{
+    padding-bottom: 20px ;
+    text-align: center;
+    color: blue;
+}
+.d2{
+    padding-top: 20px ;
+    text-align: center;
+    color: deeppink;
+    padding-bottom: 20px;
+}
+.d3{
+    padding-top: 20px;
+    text-align: center;
+    color: green;
+}
+.short-line{
+    width: 150px;
+    border-bottom: 2px solid blue;
+    margin: auto;
+}

@@ -1,0 +1,157 @@
+:root { 
+    --main-bg-color: #333; 
+    --dark-brown: #5c4033; 
+    --light-brown: #a0522d; 
+    --accent-color: #ffcc00;
+    --text-color: white;
+    --readmore-color: #cc3300; 
+    --content-width: 90%; 
+    --border-style: solid;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--main-bg-color);
+}
+.container {
+    width: var(--content-width);
+    max-width: 80rem; 
+    margin: 0 auto;
+    background-color: white; 
+}
+.header-top {
+    background-color: var(--dark-brown);
+    color: var(--text-color);
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.teapot-icon {
+    font-size: 2.5em; 
+    color: var(--light-brown);
+    margin-right: 0.25em;
+}
+.logo h1 {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: normal;
+}
+.flower-decoration {
+    height: 3em;
+    overflow: hidden;
+}
+.flower-img {
+    height: 100%;
+    object-fit: cover; 
+}
+.main-nav {
+    background-color: var(--light-brown);
+    border-top: thin var(--border-style) black;
+    border-bottom: thin var(--border-style) black;
+}
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.main-nav li a {
+    display: block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    border-right: thin var(--border-style) var(--dark-brown);
+}
+.main-nav li:first-child a {
+    background-color: var(--dark-brown);
+}
+.main-banner {
+    background: var(--dark-brown) url('banhmi.jpg') center/cover; 
+    height: 15rem; 
+    position: relative;
+    color: var(--text-color);
+}
+.banner-overlay {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    text-align: right;
+}
+.pan-d {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+.subtitle {
+    font-size: 1em;
+    margin: 0;
+}
+.menu-categories {
+    background-color: var(--dark-brown);
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 0;
+}
+.menu-categories a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1em;
+    font-weight: bold;
+}
+.featured-articles {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    gap: 1em; 
+    background-color: var(--text-color);
+}
+.food-item {
+    width: calc((100% / 5) - 0.8em); 
+    text-align: center;
+}
+.item-image {
+    height: 7rem; 
+    margin-bottom: 0.5em;
+    border: thin var(--border-style) var(--dark-brown);
+    overflow: hidden; 
+}
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+.description {
+    font-size: 0.8em;
+    line-height: 1.25em;
+    height: 4em; 
+    overflow: hidden;
+    text-align: left;
+    margin-bottom: 0.5em;
+    padding: 0 0.5em;
+}
+.read-more {
+    display: block;
+    color: var(--readmore-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: right;
+    padding-right: 0.5em;
+    margin-bottom: 1em;
+}
+footer {
+    background-color: var(--dark-brown);
+    color: var(--text-color);
+    text-align: center;
+    padding: 0.5em 0;
+    font-size: 0.8em;
+}
