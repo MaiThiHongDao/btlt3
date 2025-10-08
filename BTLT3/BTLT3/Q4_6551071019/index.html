@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt4</title>
+    <link rel="stylesheet" href="./stylesBT4.css">
+</head>
+<body>
+    <form action="" method="post" class="style-form">
+        <h2>Enter your information</h2>
+       <div class="form-content">
+         <div class="file-item">
+            <label for="name">Name:</label>
+            <input id="name" type="text" required>
+        </div>
+        <div class="file-item">
+            <label for="age">Age:</label>
+           <div class="radio-btn-group">
+             <input  type="radio" name="age" checked> 
+            <span> &lt; 18 </span>
+            <input  type="radio" name="age">
+            <span> 19-35 </span>
+            <input  type="radio" name="age">
+            <span> 36-48 </span>
+            <input  type="radio" name="age">
+            <span> &gt; 18 </span>
+           </div>
+        </div>
+        <div class="file-item">
+            <label for="profession">Profession</label>
+            <input id="profession" type="text" required>
+        </div>
+        <div class="file-item">
+            <label for="country">Country</label>
+           <select name="country" id="country" required> 
+            <option disabled selected> -----Select-----</option>
+            <option value="han-quoc">Korean</option>
+            <option value="trung-quoc">Chine</option>
+            <option value="viet-nam">Viet Nam</option>
+            <option value="nhat-ban">japan</option>
+            <option value="thai-lan">Thai Lan</option>
+           </select>
+        </div>
+        <div class="file-item">
+            <label for="interests">Interests</label>
+            <select name="interests" id="interests" required multiple> 
+                <option disabled selected> -----Select multiple-----</option>
+                <option value="reading-book">Reading books</option>
+                <option value="listen-music">Listening to music</option>
+                <option value="watch-movies">Watching movies</option>
+                <option value="play-football">Playing football</option>
+                <option value="traveling">Traveling</option>
+                <option value="cooking">Cooking</option>
+                <option value="singing">Singing</option>
+                <option value="drawing">Drawing</option>
+            </select>
+        </div>
+        <div class="file-item">
+            <label for="findout-site">How did the user found out about the site?</label>
+            <textarea name="findout-site" id="findout-site"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+       </div>
+    </form>
+</body>
+</html>

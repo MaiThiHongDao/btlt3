@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function User(Name,Age){
+            this.Name = Name;
+            this.Age = Age;
+        }
+        var u = new User('Max',20);
+        console.log(u);
+        User.prototype.Surname = 'Lee';
+        u.Age = 30;
+        console.log(u);
+    </script>
+</body>
+</html>

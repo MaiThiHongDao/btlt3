@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ChuyenSo(bin){
+            var dec = 0;
+            var length = bin.length;
+            for(var i = 0; i<length; i++){
+                var bit = Number(bin[i]);
+                var power = length -1-i;
+                dec += bit * Math.pow(2,power);
+            }
+            return dec;
+        }
+        console.log(ChuyenSo('11011011'));
+    </script>
+</body>
+</html>
